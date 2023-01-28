@@ -430,6 +430,7 @@
 body {
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .footer-wrapper {
@@ -557,9 +558,11 @@ body {
     display:flex;
     align-items: center;
 }
+
 .vectors svg:first-child {
     position: relative;
     top: -12px;
+
 }
 
 .dots {
