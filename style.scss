@@ -1,0 +1,955 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+$sm: 499px;
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url("./fonts/AvenirNextLTPro-Regular.otf");
+
+}
+
+
+@font-face {
+
+    font-family: 'Avenir Next Pro';
+    src: url("./fonts/AvenirNextLTPro-It.otf");
+
+}
+
+@font-face {
+
+    font-family: 'Avenir Next Bold';
+    src: url("./fonts/AvenirNextLTPro-Bold.otf");
+
+}
+
+body {
+    background-color: #FBF8F6;
+    margin: 0px;
+
+
+
+}
+
+.travel-head {
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 110%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #647B64;
+    margin-top: 0px;
+    padding-left: 0;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:$sm) {
+        font-size: 22px;
+    }
+
+}
+
+
+.travel-subhead {
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F3B562;
+
+    @media (max-width:$sm) {
+        font-size: 13px;
+    }
+
+}
+
+.travel-text {
+
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 132%;
+    letter-spacing: 0.04em;
+    color: #4F4F4F;
+
+    @media (max-width:$sm) {
+        font-size: 10px;
+    }
+
+}
+
+
+.container {
+
+    font-family: 'Avenir Next';
+    font-weight: 400;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+
+
+    @media (max-width:$sm) {
+        width: 100%;
+    }
+
+    .header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$sm) {
+            justify-content: space-around;
+        }
+
+
+
+
+        .header-nav {
+
+
+            font-family: 'Avenir Next';
+            font-variant: small-caps;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            column-gap: 48px;
+            color: #333333;
+            font-size: 16px;
+
+            @media (max-width:$sm) {
+                display: none;
+            }
+
+            & li a:not(.register) {
+
+                text-decoration: none;
+                color: #333333;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+
+        .mobile-logo {
+
+            display: none;
+
+            @media (max-width:$sm) {
+                display: block;
+            }
+
+        }
+
+
+
+
+
+    }
+
+    .sub-header {
+
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        column-gap: 50px;
+        position: relative;
+
+        @media (max-width:$sm) {
+            overflow: clip;
+            grid-template-columns: 90% 10%;
+            column-gap: 0px;
+        }
+
+
+        .sub-header-content {
+            margin-left: 40px;
+            background-image: url("disc.svg");
+            background-repeat: no-repeat;
+            background-position: 28% 0%;
+
+            .sub-header-head {
+
+                font-family: 'Avenir Next';
+                font-variant: small-caps;
+                font-style: normal;
+                font-size: 48px;
+                line-height: 116%;
+                max-width: 83%;
+                color: #333333;
+
+                @media (max-width:$sm) {
+                    font-size: 24px;
+                    width: 70%;
+                }
+            }
+
+
+
+            .sub-header-text {
+
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 132%;
+                letter-spacing: 0.04em;
+                color: #4F4F4F;
+                max-width: 70%;
+                margin-bottom: 32px;
+
+                @media (max-width:$sm) {
+                    font-size: 0.5em;
+                    width: 70%;
+                }
+            }
+
+        }
+
+        .sub-header-graphic {
+
+            @media (max-width:$sm) {
+                position: relative;
+                z-index: -1;
+
+            }
+
+
+
+        }
+    }
+
+    .ellipse {
+
+        position: absolute;
+        width: 132px;
+        height: 132px;
+        background: linear-gradient(193.36deg, #647B64 -520.54%, rgba(100, 123, 100, 0) 97.86%);
+        border-radius: 50%;
+        top: 650px;
+        left: calc(132px/-2);
+    }
+
+    .travel {
+
+        font-family: 'Avenir Next';
+        font-style: normal;
+        display: flex;
+        column-gap: 125px;
+        margin-top: 142px;
+
+        @media (max-width:$sm) {
+            flex-direction: column;
+        }
+
+        .travel-content {
+            width: 40%;
+
+
+            @media (max-width:$sm) {
+                width: 100%;
+            }
+
+
+
+            .color-wrapper {
+                background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+
+
+                .travel-subhead {
+                    @media (max-width:$sm) {
+                        padding-left: 30px;
+                    }
+                }
+
+                .travel-head {
+                    @media (max-width:$sm) {
+                        padding-left: 30px;
+                    }
+                }
+
+            }
+
+            .travel-text {
+                @media (max-width:$sm) {
+                    margin-left: 30px;
+                }
+            }
+
+            .start {
+
+                @media (max-width:$sm) {
+                    margin-left: 30px;
+                }
+            }
+
+
+
+        }
+
+        .travel-options {
+            width: 60%;
+            display: grid;
+            gap: 100px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            @media (max-width:$sm) {
+
+                width: 100%;
+                margin-top: 72px;
+                display: grid;
+                gap: 30px;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr 1fr;
+                margin-right: 30px;
+                margin-left: 30px;
+
+            }
+
+
+            .travel-option {
+
+                padding: 40px;
+
+                @media (max-width:$sm) {
+
+                    padding: 20px;
+                    height: 147px;
+                    width: 175px;
+                }
+
+
+                .travel-option-card {
+
+                    width: 48px;
+                    height: 48px;
+
+                    @media (max-width:$sm) {
+
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    background: white;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .travel-option-text {
+
+                    font-size: 13px;
+                    line-height: 132%;
+                    letter-spacing: 0.04em;
+                    color: #4F4F4F;
+
+                    
+                    @media (max-width:$sm) {
+
+                        font-size: 8px;
+                    }
+
+                }
+
+                .travel-option-head {
+
+                    font-size: 24px;
+                    line-height: 116%;
+                    color: #333333;
+
+                    
+                    @media (max-width:$sm) {
+                        font-size: 12px;
+                    }
+                }
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+
+        .travel-option.car {
+            background: #FFFFFF;
+            box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+            border-radius: 8px;
+
+            & .travel-option-card {
+
+                background-color: #647B64;
+
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+    .color-wrapper {
+        background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+
+    }
+
+    .color-wrapper-two {
+
+        margin-top: 145px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .travel-head-two {
+
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 41px;
+            line-height: 110%;
+            text-align: left;
+            text-transform: uppercase;
+            color: #647B64;
+            margin-top: 0px;
+            padding-left: 0;
+            padding-top: 17px;
+            padding-bottom: 20px;
+
+
+            @media (max-width:$sm) {
+                font-size: 20px;
+
+            }
+
+        }
+
+        .travel-subhead {
+
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #F3B562;
+
+            @media (max-width:$sm) {
+                font-size: 13px;
+
+            }
+
+        }
+
+
+
+
+    }
+
+    .middle-section {
+
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media (max-width:$sm) {
+            overflow: clip;
+            gap: 20px;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin-left: 40px;
+        }
+
+
+
+        .middle-card {
+
+            font-size: 16px;
+            line-height: 132%;
+
+
+            letter-spacing: 0.04em;
+            width: 360px;
+            height: 338px;
+            padding: 70px 50px 70px 50px;
+
+
+            background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+            border-radius: 8px;
+
+
+            @media (max-width:$sm) {
+                width: 160px;
+                height: 160px;
+                padding: 30px 20px;
+                font-size: 8px;
+                ;
+
+            }
+
+            & svg {
+                height: 25%;
+                width: 25%;
+            }
+
+
+
+
+
+
+            .middle-head {
+
+                @media (max-width:$sm) {
+                    font-size: 10px;
+                }
+
+            }
+
+            .middle-text {
+
+                @media (max-width:$sm) {
+                    font-size: 8px;
+                }
+
+            }
+
+
+
+
+
+            &.green {
+
+                background: #647B64;
+                border-radius: 8px;
+                color: white;
+            }
+
+        }
+    }
+
+    .middle-2 {
+
+        margin-top: 150px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width:$sm) {
+            grid-template-columns: 10% 90%;
+        }
+
+        .middle-2-photo {
+
+            @media (max-width:$sm) {
+                overflow: clip;
+                position: relative;
+                left: -240px;
+            }
+
+            // & img {
+            //     @media (max-width:$sm) {
+            //         width: 100%;
+            //     }
+            // }
+
+
+        }
+
+
+
+    }
+
+
+
+
+    .middle-2-content {
+
+        max-width: 70%;
+
+
+
+    }
+}
+
+.slide {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+
+    @media (max-width:$sm) {
+        gap: 20px;
+        overflow: clip;
+    }
+
+
+
+    .color-wrapper-three {
+        margin-top: 145px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+
+
+
+    .slide-card {
+
+        width: 360px;
+        height: 419px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+        border-radius: 8px;
+
+
+        & img {
+
+            justify-self: end;
+            align-self: end;
+        }
+
+
+        .slide-person {
+
+            .slide-card-head {
+
+                font-variant: small-caps;
+                font-size: 16px;
+                margin-bottom: 0px
+            }
+
+            .slide-card-subhead {
+                font-variant: small-caps;
+                font-size: 13px;
+            }
+        }
+
+        .card-text {
+
+            grid-row: 2 / 3;
+            grid-column: 1 / 3;
+
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 132%;
+            letter-spacing: 0.04em;
+            color: #4F4F4F;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding: 24px 60px 32px 40px;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.register {
+
+    background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%), linear-gradient(102.3deg, #0BB1E3 -4.62%, #0F2976 178.22%), #0E70AF;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: #FEFEFE;
+    text-decoration: none;
+}
+
+
+
+.start {
+
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    color: #FEFEFE;
+    background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+    border: none;
+    border-radius: 2px;
+    width: 350px;
+    height: 73px;
+    font-size: 16px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 120px;
+    cursor: pointer;
+
+    @media (max-width:$sm) {
+        width: 63%;
+        font-size: 10px;
+        height: 36px;
+        column-gap: 0px;
+
+    }
+
+
+}
+
+.start::after {
+
+    content: url("footer-vector.svg");
+}
+
+
+
+
+
+
+
+
+.footer-color {
+
+    background: #F0DCC5;
+    width: 100%;
+
+    .footer-wrapper {
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+        padding: 100px;
+        background: #F0DCC5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        font-family: 'Avenir Next';
+
+
+
+        @media (max-width:$sm) {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 30px;
+
+        }
+
+
+        .footer-content {
+            font-size: 14px;
+            line-height: 132%;
+            letter-spacing: 0.04em;
+            color: #4F4F4F;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            @media (max-width:$sm) {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 3;
+
+            }
+        }
+
+        .footer-nav {
+
+            list-style-type: none;
+            display: grid;
+            row-gap: 12px;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333333;
+
+            @media (max-width:$sm) {
+                justify-self: start;
+                padding-left: 0px;
+            }
+        }
+
+        .message {
+
+            @media (max-width:$sm) {
+
+                grid-row: 3 / 4;
+                grid-column: 1 / 3;
+
+            }
+
+            .message-title {
+
+                font-size: 20px;
+                line-height: 30px;
+                color: #647B64;
+
+            }
+
+            .message-input {
+
+                padding: 5px 20px 60px 20px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #4F4F4F;
+                width: 283px;
+                height: 113px;
+                margin-bottom: 30px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+.footer-nav-title {
+
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #647B64;
+}
+
+
+
+.copyright,
+.rights {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.send {
+    font-family: 'Avenir Next';
+    color: white;
+    background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+    box-shadow: 0px 15.5068px 31.0137px rgba(128, 143, 150, 0.19);
+    border-radius: 1.55068px;
+    cursor: pointer;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    width: 283px;
+    height: 56.6px;
+    font-size: 12.4055px;
+    line-height: 125.5%;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.send::after {
+
+    content: url("footer-vector.svg");
+}
+
+
+
+.media {
+
+    display: flex;
+    column-gap: 15px;
+}
+
+
+.head-vector {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.vectors {
+
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$sm) {
+        display: none;
+    }
+}
+
+.vectors svg:first-child {
+    position: relative;
+    top: -12px;
+
+}
+
+.dots {
+
+
+    position: absolute;
+    z-index: -1;
+    left: 260px;
+    top: 1980px;
+
+    @media (max-width:$sm) {
+
+        display: none;
+
+    }
+}
