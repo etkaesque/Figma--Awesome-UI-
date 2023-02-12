@@ -1,0 +1,103 @@
+$sm: 499px;
+@use 'fonts';
+@use 'responsive';
+
+.travel-head {
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 110%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #647B64;
+    margin-top: 0px;
+    padding-left: 0;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:$sm) {
+        font-size: 22px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+}
+
+.travel-subhead {
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F3B562;
+
+    @media (max-width:$sm) {
+        font-size: 13px;
+    }
+
+}
+
+.travel-text {
+
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 132%;
+    letter-spacing: 0.04em;
+    color: #4F4F4F;
+
+    @media (max-width:$sm) {
+        font-size: 10px;
+    }
+
+}
+
+
+.head-vector {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.vectors {
+
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$sm) {
+        display: none;
+    }
+}
+
+.vectors svg:first-child {
+    position: relative;
+    top: -12px;
+
+}
+
+.dots {
+
+
+    position: absolute;
+    z-index: -1;
+    left: 260px;
+    top: 1980px;
+
+    @media (max-width:$sm) {
+
+        display: none;
+
+    }
+}

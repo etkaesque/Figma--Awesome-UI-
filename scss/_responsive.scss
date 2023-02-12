@@ -1,0 +1,9 @@
+$sm-width: 499px;
+
+@mixin sm {
+
+    @media (max-width: $sm-width) {
+        @content;
+    }
+}
+

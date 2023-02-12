@@ -1,0 +1,124 @@
+@use 'fonts';
+@use 'responsive';
+
+
+.footer-color {
+
+    background: #F0DCC5;
+    width: 100%;
+
+    .footer-wrapper {
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+        padding: 100px 0px;
+        background: #F0DCC5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        font-family: 'Avenir Next';
+
+
+
+        @include responsive.sm {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 30px;
+
+
+        }
+
+
+        .footer-content {
+            font-size: 14px;
+            line-height: 132%;
+            letter-spacing: 0.04em;
+            color: #4F4F4F;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            @include responsive.sm {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 3;
+
+            }
+        }
+
+        .footer-nav {
+
+            list-style-type: none;
+            display: grid;
+            row-gap: 12px;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333333;
+
+            @include responsive.sm {
+                justify-self: start;
+                padding-left: 0px;
+            }
+        }
+
+        .message {
+
+            @include responsive.sm {
+
+                grid-row: 3 / 4;
+                grid-column: 1 / 3;
+
+            }
+
+            .message-title {
+
+                font-size: 20px;
+                line-height: 30px;
+                color: #647B64;
+
+            }
+
+            .message-input {
+
+                padding: 5px 20px 60px 20px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #4F4F4F;
+                width: 283px;
+                height: 113px;
+                margin-bottom: 30px;
+
+                @include responsive.sm {
+                    
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.footer-nav-title {
+
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #647B64;
+}
+
+.copyright,
+.rights {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.media {
+
+    display: flex;
+    column-gap: 15px;
+}
