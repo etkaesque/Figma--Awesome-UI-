@@ -676,6 +676,11 @@ body {
   height: 113px;
   margin-bottom: 30px;
 }
+@media (max-width: 499px) {
+  .footer-color .footer-wrapper .message .message-input {
+    width: 100%;
+  }
+}
 
 .footer-nav-title {
   margin-bottom: 12px;
@@ -713,6 +718,13 @@ body {
   align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
+}
+@media (max-width: 499px) {
+  .send {
+    width: 100%;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
 }
 
 .send::after {

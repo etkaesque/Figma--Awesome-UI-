@@ -283,7 +283,6 @@ body {
             .color-wrapper {
                 background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
 
-
                 @media (max-width:$sm) {
                     min-width: 65%;
                 }
@@ -931,6 +930,11 @@ body {
                 height: 113px;
                 margin-bottom: 30px;
 
+                @media (max-width:$sm) {
+                    
+                    width: 100%;
+                }
+
             }
 
         }
@@ -983,6 +987,14 @@ body {
     justify-content: space-around;
     align-items: center;
     column-gap: 100px;
+
+    @media (max-width:$sm) {
+                    
+        width: 100%;
+        column-gap: 0px;
+    }
+
+
 }
 
 .send::after {
