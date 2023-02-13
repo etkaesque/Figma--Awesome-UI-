@@ -199,12 +199,25 @@ body {
 
 
 
-            .color-wrapper {
-                background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+            .color-wrapper-travel {
+                
 
                 @include responsive.sm {
                     min-width: 65%;
                 }
+
+                &::before {
+                    content: "";
+                    background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+                    min-width: 50%;
+                    height: 120px;
+                    position: absolute;
+                    left: 0px;
+                    z-index: -1;
+            
+                }
+
+                
 
 
 
@@ -357,7 +370,7 @@ body {
     }
 
     .color-wrapper {
-        background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+       
     
 
         @include responsive.sm {

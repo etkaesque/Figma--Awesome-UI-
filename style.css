@@ -439,21 +439,27 @@ body .container .travel .travel-content {
     width: 100%;
   }
 }
-body .container .travel .travel-content .color-wrapper {
-  background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
-}
 @media (max-width: 499px) {
-  body .container .travel .travel-content .color-wrapper {
+  body .container .travel .travel-content .color-wrapper-travel {
     min-width: 65%;
   }
 }
+body .container .travel .travel-content .color-wrapper-travel::before {
+  content: "";
+  background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+  min-width: 50%;
+  height: 120px;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+}
 @media (max-width: 499px) {
-  body .container .travel .travel-content .color-wrapper .travel-subhead {
+  body .container .travel .travel-content .color-wrapper-travel .travel-subhead {
     padding-left: 30px;
   }
 }
 @media (max-width: 499px) {
-  body .container .travel .travel-content .color-wrapper .travel-head {
+  body .container .travel .travel-content .color-wrapper-travel .travel-head {
     padding-left: 30px;
     max-width: 70%;
   }
@@ -539,9 +545,6 @@ body .container .travel .travel-option.car {
 }
 body .container .travel .travel-option.car .travel-option-card {
   background-color: #647B64;
-}
-body .container .color-wrapper {
-  background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
 }
 @media (max-width: 499px) {
   body .container .color-wrapper {
