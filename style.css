@@ -284,7 +284,7 @@
 }
 
 body {
-  background-color: #FBF8F6;
+  background: linear-gradient(180deg, rgb(242, 231, 224) 25%, rgb(234, 234, 230) 70%, rgb(251, 248, 245) 92%, rgb(255, 255, 255) 100%);
   margin: 0px;
 }
 body .container {
@@ -447,11 +447,24 @@ body .container .travel .travel-content {
 body .container .travel .travel-content .color-wrapper-travel::before {
   content: "";
   background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
-  min-width: 50%;
   height: 120px;
   position: absolute;
   left: 0px;
   z-index: -1;
+  min-width: 400px;
+  width: 40%;
+}
+@media (max-width: 499px) {
+  body .container .travel .travel-content .color-wrapper-travel::before {
+    content: "";
+    background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.25%, rgba(239, 128, 49, 0.15) -19.98%, rgba(239, 128, 49, 0) 119.71%);
+    width: 75%;
+    min-width: auto;
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    z-index: -1;
+  }
 }
 @media (max-width: 499px) {
   body .container .travel .travel-content .color-wrapper-travel .travel-subhead {
