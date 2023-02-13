@@ -558,6 +558,7 @@ body .container .color-wrapper-two {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 body .container .color-wrapper-two .travel-head-two {
   font-family: "Avenir Next";
