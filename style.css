@@ -266,10 +266,10 @@
 }
 
 .dots {
-  position: absolute;
-  z-index: -1;
-  left: 260px;
-  top: 1980px;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    top: 164px;
 }
 @media (max-width: 499px) {
   .dots {
@@ -629,6 +629,7 @@ body .container .middle-section .middle-card {
   padding: 70px 50px 70px 50px;
   background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
   border-radius: 8px;
+  position: relative;
 }
 @media (max-width: 499px) {
   body .container .middle-section .middle-card {
